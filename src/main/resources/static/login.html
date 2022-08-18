@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>登录</title>
+</head>
+<body>
+    <div class="nav">
+        五子棋对战
+    </div>
+    <div class="container">
+        <div class="dialog">
+            <h2>登录</h2>
+            <div class="row">
+                <span>用户名</span>
+                <input type="text" id="username">
+            </div>
+            <div class="row">
+                <span>密码</span>
+                <input type="password" id="password">
+            </div>
+                <a href="register.html">注册用户 -></a>
+                <!-- &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;-->
+            <div class="row">
+                <button id="submit">提交</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jQuery.min.js"></script>
+    <script>
+        let username = document.querySelector("#username");
+        let password = document.querySelector("#password");
+        let submit = document.querySelector("#submit");
+        submit.onclick = function(){
+            $.ajax({
+                url:'/login',
+                type:'POST',
+                data:{
+                    "username":username.value,
+                    "password":password.value,
+                },
+                success:function(body){
+                    if(body != null && body.userId > 0){
+                        console.log("登陆成功");
+                        alert("登陆成功");
+
+                        location.assign('/game_hall.html');
+                    }else{
+                        alert("登录失败");
+                    }
+                },
+                error:function(){
+                    alert("登录失败")
+                }
+            });
+        }
+    </script>
+</body>
+</html>

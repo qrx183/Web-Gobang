@@ -1,0 +1,32 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-image: url(../images/beijing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+    height: 50px;
+
+    background-color: rgb(50,50,50);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.container{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
