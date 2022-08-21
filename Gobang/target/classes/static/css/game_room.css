@@ -1,0 +1,23 @@
+
+#screen{
+     width: 450px;
+     height: 50px;
+     margin-top: 10px;
+     background-color: white;
+     font-size: 20px;
+     line-height: 50px;
+     text-align: center;
+}
+
+button{
+     margin-left: 125px;
+     width: 200px;
+     height: 50px;
+     margin-top: 10px;
+     background-color: rgb(99, 185, 99);
+     font-size: 20px;
+     line-height: 50px;
+     border: none;
+     outline: none;
+     text-align: center;
+}

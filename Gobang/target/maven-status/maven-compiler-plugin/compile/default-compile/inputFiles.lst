@@ -1,0 +1,17 @@
+F:\Gobang\src\main\java\com\example\gobang\GobangApplication.java
+F:\Gobang\src\main\java\com\example\gobang\game\GameRequest.java
+F:\Gobang\src\main\java\com\example\gobang\game\OnlineUserManger.java
+F:\Gobang\src\main\java\com\example\gobang\game\RoomManager.java
+F:\Gobang\src\main\java\com\example\gobang\mapper\UserMapper.java
+F:\Gobang\src\main\java\com\example\gobang\api\TestAPI.java
+F:\Gobang\src\main\java\com\example\gobang\game\Matcher.java
+F:\Gobang\src\main\java\com\example\gobang\model\User.java
+F:\Gobang\src\main\java\com\example\gobang\game\GameReadyResponse.java
+F:\Gobang\src\main\java\com\example\gobang\game\MatchResponse.java
+F:\Gobang\src\main\java\com\example\gobang\game\Room.java
+F:\Gobang\src\main\java\com\example\gobang\api\MatchAPI.java
+F:\Gobang\src\main\java\com\example\gobang\controller\UserController.java
+F:\Gobang\src\main\java\com\example\gobang\config\WebSocketConfig.java
+F:\Gobang\src\main\java\com\example\gobang\game\GameResponse.java
+F:\Gobang\src\main\java\com\example\gobang\game\MatchRequest.java
+F:\Gobang\src\main\java\com\example\gobang\api\GameAPI.java
